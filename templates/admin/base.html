@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+{% include 'includes/_header.html' %}
+<body id="page-top">
+  <div id="wrapper">
+{% include 'includes/_sidenav.html' %}
+
+    <div id="content-wrapper" class="d-flex flex-column">
+      <div id="content">
+        {% include 'includes/_topnav.html' %}
+
+        <div class="container-fluid">
+          {% block content%}
+          <!-- inject html of the page here -->
+          {% endblock %}
+        </div>
+      </div>
+      {% include 'includes/_scripts.html' %}
+      {% include 'includes/_footer.html' %}
+
+</body>
+</html>

@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- JINJA TEMPLATES -->
+    
+    {% if name %}
+    <title>Welcome  {{name|title}}</title>
+    {% else %}
+    <title>Welcome  User </title>
+    {% endif %}
+
+    {{ [1, 2, 3]|min }}
+    
+</head>
+<body>
+    <h1>User Information</h1>
+    {% if user %}
+    <p>{{ user.username}}</p>
+    <p>{{ user.fname}}</p>
+    <p>{{ user.lname}}</p>
+    {% else %}
+    <p>No users found</p>
+    {% endif %}
+</body>
+</html>
