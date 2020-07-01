@@ -1,0 +1,12 @@
+<!DOCTYPE html>
+<html lang="en">
+{% include 'includes/_header.html' %}
+<body class="bg-primary">
+  
+          {% block content%}
+          <!-- inject html of the page here -->
+          {% endblock %}
+      {% include 'includes/_scripts.html' %}
+
+</body>
+</html>
